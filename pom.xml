@@ -59,7 +59,7 @@
     </organization>
 
     <scm>
-        <connection>scm:svn:http://www.kamradtfamily.net/svn/projects/trunk/root</connection>
+        <connection>scm:svn:https://www.kamradtfamily.net/svn/projects/trunk/root</connection>
         <developerConnection>scm:svn:https://www.kamradtfamily.net/svn/projects/trunk/root</developerConnection>
         <url>http://www.kamradtfamily.net/svn/projects/trunk/root</url>
     </scm>
