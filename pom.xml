@@ -3,7 +3,7 @@
   <groupId>net.kamradtfamily.root</groupId>
   <artifactId>root</artifactId>
   <packaging>pom</packaging>
-  <version>1.4-SNAPSHOT</version>
+  <version>1.4</version>
   <properties>
   	<devServer>https://www.kamradtfamily.net</devServer>
   	<docServer>https://www.kamradtfamily.net</docServer>
@@ -59,21 +59,16 @@
     </organization>
 
     <scm>
-        <connection>scm:svn:https://www.kamradtfamily.net/projects/root/trunk</connection>
-        <developerConnection>scm:svn:https://www.kamradtfamily.net/projects/root/trunk</developerConnection>
-        <url>https://www.kamradtfamily.net/projects/root/trunk</url>
+        <connection>scm:svn:https://www.kamradtfamily.net/svn/projects/tags/root-1.4</connection>
+        <developerConnection>scm:svn:https://www.kamradtfamily.net/svn/projects/tags/root-1.4</developerConnection>
+        <url>https://www.kamradtfamily.net/svn/projects/tags/root-1.4</url>
     </scm>
     <distributionManagement>
         <repository>
-          <id>archiva.internal</id>
+          <id>kamradtfamily.net.internal</id>
           <name>Internal Release Repository</name>
           <url>dav:https://www.kamradtfamily.net/archiva/repository/internal/</url>
         </repository>
-        <snapshotRepository>
-          <id>archiva.snapshots</id>
-          <name>Internal Snapshot Repository</name>
-          <url>dav:https://www.kamradtfamily.net/archiva/repository/snapshots/</url>
-        </snapshotRepository>
          <site>
             <id>festus.projects</id>
             <url>dav:https://www.kamradtfamily.net/projects/root/${version}</url>
@@ -81,27 +76,26 @@
     </distributionManagement>
     <build>
         <plugins>
-	      <plugin>
-		<artifactId>maven-release-plugin</artifactId>
-		<configuration>
-		  <tagBase>https://www.kamradtfamily.net/svn/projects/root/tags</tagBase>
-		</configuration>
-	      </plugin>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.5</source>
-                    <target>1.5</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-site-plugin</artifactId>
-                <configuration>
-                    <locales>en</locales>
-                    <port>${testsite.port}</port>
-                    <tempWebappDirectory>${basedir}/target/site/tempdir</tempWebappDirectory>
-                </configuration>
-            </plugin>
+          <plugin>
+            <artifactId>maven-release-plugin</artifactId>
+            <configuration>
+              <tagBase>https://www.kamradtfamily.net/svn/projects/tags</tagBase>
+            </configuration>
+          </plugin>
+          <plugin>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <configuration>
+                  <source>1.5</source>
+                  <target>1.5</target>
+              </configuration>
+          </plugin>
+          <plugin>
+              <artifactId>maven-site-plugin</artifactId>
+              <configuration>
+                  <locales>en</locales>
+                  <tempWebappDirectory>${basedir}/target/site/tempdir</tempWebappDirectory>
+              </configuration>
+          </plugin>
         </plugins>
     </build>
 </project>
