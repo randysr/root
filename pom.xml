@@ -3,7 +3,7 @@
   <groupId>net.kamradtfamily.root</groupId>
   <artifactId>root</artifactId>
   <packaging>pom</packaging>
-  <version>1.5-SNAPSHOT</version>
+  <version>1.5</version>
   <properties>
     <devServer>http://www.kamradtfamily.net</devServer>
     <docServer>http://www.kamradtfamily.net</docServer>
@@ -59,9 +59,9 @@
     </organization>
 
     <scm>
-        <connection>scm:svn:https://www.kamradtfamily.net/svn/projects/trunk/root</connection>
-        <developerConnection>scm:svn:https://www.kamradtfamily.net/svn/projects/trunk/root</developerConnection>
-        <url>http://www.kamradtfamily.net/svn/projects/trunk/root</url>
+        <connection>scm:svn:https://www.kamradtfamily.net/svn/projects/tags/root-1.5</connection>
+        <developerConnection>scm:svn:https://www.kamradtfamily.net/svn/projects/tags/root-1.5</developerConnection>
+        <url>http://www.kamradtfamily.net/svn/projects/tags/root-1.5</url>
     </scm>
     <distributionManagement>
         <repository>
@@ -79,7 +79,7 @@
           <plugin>
             <artifactId>maven-release-plugin</artifactId>
             <configuration>
-              <tagBase>http://www.kamradtfamily.net/svn/projects/tags</tagBase>
+              <tagBase>https://www.kamradtfamily.net/svn/projects/tags</tagBase>
             </configuration>
           </plugin>
           <plugin>
