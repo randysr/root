@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="K Projects">
+  <bannerLeft>
+    <name>K-Projects</name>
+    <src>images/kp.JPG</src>
+  </bannerLeft>
+  <bannerRight>
+    <name>KFN</name>
+    <src>images/k-logo.jpg</src>
+    <href>http://www.kamradtfamily.net/</href>
+  </bannerRight>
+  <body>
+    <links>
+      <item name="KFN" href="http://www.kamradtfamily.net/" />
+      <item name="Continuum" href="http://continuum.apache.org/" />
+      <item name="Apache" href="http://www.apache.org/" />
+      <item name="Maven 2" href="http://maven.apache.org/maven2/"/>
+      <item name="MySQL" href="http://www.mysql.com/"/>
+      <item name="SVN" href="http://subversion.tigris.org/"/>
+      <item name="Glassfish" href="https://glassfish.dev.java.net/"/>
+    </links>
+
+    <menu ref="reports"/>
+    <menu name="Main Menu">
+    <item name="Home" href="index.html"/>
+    <item name="info" href="info.html"/>
+    <item name="FAQ" href="faq.html"/>
+    </menu>
+  </body>
+</project>

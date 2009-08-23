@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<faqs id="General FAQ">
+  <part id="General">
+    <faq id="what">
+      <question>What are the K projects?</question>
+      <answer>
+        <p>
+          Projects initiated members of the Kamradt family
+        </p>
+      </answer>
+    </faq>
+    <faq id="svnco">
+      <question>How do I initially retrieve code from SVN</question>
+      <answer>
+        <p>
+          Assuming you already have svn installed and in your path, the command is 'svn co &lt;URL&gt; &lt;directory&gt;'  Where &lt;URL> is
+          the url of the svn repository, and &lt;directory&gt; is the directory you want the code checkout in.  For example to check
+          out the code repository for this site, 'svn co http://www.kamradtfamily.net/svn/incubator/projects projects'.
+        </p>
+      </answer>
+    </faq>
+    <faq id="svnup">
+      <question>How do I update my sandbox with the latest code from SVN</question>
+      <answer>
+        <p>
+          Assuming you already have used the svn co command to create your sandbox, from the command line,
+          cd to the sandbox directory and run 'svn update'.  It remembers where the sandbox was created
+          from.
+        </p>
+      </answer>
+    </faq>
+    <faq id="svncommit">
+      <question>How do I commit changes in my sandbox to the SVN repository</question>
+      <answer>
+        <p>
+          Assuming you already have used the svn co command to create your sandbox, from the command line,
+          cd to the sandbox directory and run 'svn commit'.  It remembers where the sandbox was created
+          from.
+        </p>
+      </answer>
+    </faq>
+    <faq id="svnexport">
+      <question>How do I retrieve code from SVN without those annoying .svn folders</question>
+      <answer>
+        <p>
+          You want to do an export, 'svn export &lt;URL&gt; &lt;directory&gt;'.  You won't be able to commit code
+          but the .svn folders won't be created.  This is useful if you want to zip up the code to
+          send somewhere.
+        </p>
+      </answer>
+    </faq>
+    <faq id="mvninstall">
+      <question>Why 'mvn install'</question>
+      <answer>
+        <p>
+          Technically you can use 'mvn package' to simply create a jar file in the project's target directory.  The 'mvn install'
+          command will create the jar file AND install it in the 'local repository'
+        </p>
+      </answer>
+    </faq>
+    <faq id="mvnlocalrepos">
+      <question>What is the maven local repository</question>
+      <answer>
+        <p>
+          This is where maven installs jar files that you have built, so they can be shared with other projects you
+          are building.  When one project depends on another's jar file, it doesn't retrieve it from the project's
+          target directory, but from the local repository.  That is why it's important to always run 'mvn install'.
+          In addition, dependencies to external jar files are also cached there. The local repository can be found
+          in your user directory under .m2/repository.  On windows your user directory is in c:/documents and settings/username
+        </p>
+      </answer>
+    </faq>
+    <faq id="continuumbuild">
+      <question>How do I initiate builds from continuum</question>
+      <answer>
+        <p>
+          Browse to the continuum site (http://www.kamradtfamily.net:8082/continuum).  Login, and select your project group.
+          Press the 'build now' icon.  The build should get queued and run, and the build results can be seen by clicking
+          on the build link.  If the 'build now' icon is greyed, the build is already queued.
+        </p>
+      </answer>
+    </faq>
+    <faq id="localreports">
+      <question>How can I review reports from the maven build locally</question>
+      <answer>
+        <p>
+In order to review reports, choose a port to run a local site on and add it to your settings.xml:
+ &lt;testsite.port&gt;9000&lt;/testsite.port&gt; In this case I chose 9000, you may need to pick another.
+Next run the following from the sub project directory you want to view: 'mvn site:run' This will churn for
+1-2 minutes, and finally report 'Started SelectChannelConnector @ 0.0.0.0:9000' Then you can view the reports
+at http://localhost:9000/  Once you are done viewing the reports, a ctrl-C will end the mvn command.  Some of
+the pages are not generated until you view them, so it saves some time.
+        </p>
+      </answer>
+    </faq>
+  </part>
+</faqs>
