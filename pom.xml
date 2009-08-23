@@ -5,13 +5,13 @@
   <packaging>pom</packaging>
   <version>1.6-SNAPSHOT</version>
   <properties>
-    <devServer>http://www.kamradtfamily.net</devServer>
-    <docServer>http://www.kamradtfamily.net</docServer>
-    <svnServer>http://www.kamradtfamily.net/svn</svnServer>
+    <devServer>https://www.kamradtfamily.net</devServer>
+    <docServer>https://www.kamradtfamily.net</docServer>
+    <svnServer>https://www.kamradtfamily.net/svn</svnServer>
   </properties>
   <name>Projects</name>
     <description>Kamradtfamily.net Project Root</description>
-    <url>http://www.kamradtfamily.net/projects/root/${version}</url>
+    <url>https://www.kamradtfamily.net/projects/root/${version}</url>
     <ciManagement>
         <system>continuum</system>
         <url>${devServer}/continuum</url>
@@ -26,12 +26,12 @@
     </ciManagement>
   <issueManagement>
     <system>Bugzilla</system>
-    <url>http://www.kamradtfamily.net/bugzilla</url>
+    <url>https://www.kamradtfamily.net/bugzilla</url>
   </issueManagement>
   <licenses>
     <license>
       <name>The Kamradt Family Software License, Version 1.0</name>
-      <url>http://www.kamradtfamily.net/projects/licenses/LICENSE-1.0.txt</url>
+      <url>https://www.kamradtfamily.net/projects/licenses/LICENSE-1.0.txt</url>
       <distribution>repo</distribution>
     </license>
   </licenses>
@@ -55,13 +55,13 @@
 
     <organization>
         <name>Kamradt Family</name>
-        <url>http://www.kamradtfamily.net/</url>
+        <url>https://www.kamradtfamily.net/</url>
     </organization>
 
     <scm>
         <connection>scm:svn:https://www.kamradtfamily.net/svn/projects/trunk/root</connection>
         <developerConnection>scm:svn:https://www.kamradtfamily.net/svn/projects/trunk/root</developerConnection>
-        <url>http://www.kamradtfamily.net/svn/projects/trunk/root</url>
+        <url>https://www.kamradtfamily.net/svn/projects/trunk/root</url>
     </scm>
     <distributionManagement>
         <repository>
