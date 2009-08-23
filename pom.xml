@@ -3,7 +3,7 @@
   <groupId>net.kamradtfamily.root</groupId>
   <artifactId>root</artifactId>
   <packaging>pom</packaging>
-  <version>1.6-SNAPSHOT</version>
+  <version>1.5-SNAPSHOT</version>
   <properties>
     <devServer>http://www.kamradtfamily.net</devServer>
     <docServer>http://www.kamradtfamily.net</docServer>
