@@ -59,9 +59,9 @@
     </organization>
 
     <scm>
-        <connection>scm:svn:https://www.kamradtfamily.net/svn/projects/trunk/root</connection>
+        <connection>scm:svn:http://www.kamradtfamily.net/svn/projects/trunk/root</connection>
         <developerConnection>scm:svn:https://www.kamradtfamily.net/svn/projects/trunk/root</developerConnection>
-        <url>https://www.kamradtfamily.net/svn/projects/trunk/root</url>
+        <url>http://www.kamradtfamily.net/svn/projects/trunk/root</url>
     </scm>
     <distributionManagement>
         <repository>
