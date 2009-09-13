@@ -67,11 +67,11 @@
         <repository>
           <id>kamradtfamily.net.internal</id>
           <name>Internal Release Repository</name>
-          <url>https://www.kamradtfamily.net/archiva/repository/internal/</url>
+          <url>dav:https://www.kamradtfamily.net/archiva/repository/internal/</url>
         </repository>
          <site>
             <id>festus.projects</id>
-            <url>https://www.kamradtfamily.net/projects/root/${version}</url>
+            <url>dav:https://www.kamradtfamily.net/projects/root/${version}</url>
         </site>
     </distributionManagement>
     <build>
