@@ -1,16 +1,17 @@
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>net.kamradtfamily.root</groupId>
-  <artifactId>root</artifactId>
-  <packaging>pom</packaging>
-  <version>1.10-SNAPSHOT</version>
-  <properties>
-    <devServer>https://www.kamradtfamily.net</devServer>
-    <docServer>https://www.kamradtfamily.net/projects</docServer>
-    <svnServer>https://www.kamradtfamily.net/svn</svnServer>
-  </properties>
-  <name>Projects</name>
-    <description>Kamradtfamily.net Project Root</description>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>net.kamradtfamily.root</groupId>
+    <artifactId>root</artifactId>
+    <packaging>pom</packaging>
+    <version>1.10</version>
+    <properties>
+        <devServer>https://www.kamradtfamily.net</devServer>
+        <docServer>https://www.kamradtfamily.net/projects</docServer>
+        <svnServer>https://www.kamradtfamily.net/svn</svnServer>
+    </properties>
+    <name>Kamradtfamily.net Project Root</name>
+    <description>Root project with basic descriptions for all projects</description>
     <url>${docServer}/root-${version}</url>
     <ciManagement>
         <system>continuum</system>
@@ -24,18 +25,18 @@
             </notifier>
         </notifiers>
     </ciManagement>
-  <issueManagement>
-    <system>Bugzilla</system>
-    <url>https://www.kamradtfamily.net/bugzilla</url>
-  </issueManagement>
-  <licenses>
-    <license>
-      <name>The Kamradt Family Software License, Version 1.0</name>
-      <url>https://www.kamradtfamily.net/projects/licenses/LICENSE-1.0.txt</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
-  <mailingLists>
+    <issueManagement>
+        <system>Bugzilla</system>
+        <url>https://www.kamradtfamily.net/bugzilla</url>
+    </issueManagement>
+    <licenses>
+        <license>
+            <name>The Kamradt Family Software License, Version 1.0</name>
+            <url>http://www.kamradtfamily.net/projects/licenses/kamradtfamilylicense-1.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <mailingLists>
     </mailingLists>
     <prerequisites>
         <maven>2.2.1</maven>
@@ -59,43 +60,43 @@
     </organization>
 
     <scm>
-        <connection>scm:svn:https://www.kamradtfamily.net/svn/projects/trunk/root</connection>
-        <developerConnection>scm:svn:https://www.kamradtfamily.net/svn/projects/trunk/root</developerConnection>
-        <url>https://www.kamradtfamily.net/svn/projects/trunk/root</url>
+        <connection>scm:svn:https://www.kamradtfamily.net/svn/projects/tags/root-1.10</connection>
+        <developerConnection>scm:svn:https://www.kamradtfamily.net/svn/projects/tags/root-1.10</developerConnection>
+        <url>https://www.kamradtfamily.net/svn/projects/tags/root-1.10</url>
     </scm>
     <distributionManagement>
         <repository>
-          <id>kamradtfamily.net.internal</id>
-          <name>Internal Release Repository</name>
-          <url>dav:https://www.kamradtfamily.net/archiva/repository/internal/</url>
+            <id>kamradtfamily.net.internal</id>
+            <name>Internal Release Repository</name>
+            <url>dav:https://www.kamradtfamily.net/archiva/repository/internal/</url>
         </repository>
-         <site>
+        <site>
             <id>festus.projects</id>
             <url>dav:${docServer}/root-${version}</url>
         </site>
     </distributionManagement>
     <build>
         <plugins>
-          <plugin>
-            <artifactId>maven-release-plugin</artifactId>
-            <configuration>
-              <tagBase>https://www.kamradtfamily.net/svn/projects/tags</tagBase>
-            </configuration>
-          </plugin>
-          <plugin>
-              <artifactId>maven-compiler-plugin</artifactId>
-              <configuration>
-                  <source>1.5</source>
-                  <target>1.5</target>
-              </configuration>
-          </plugin>
-          <plugin>
-              <artifactId>maven-site-plugin</artifactId>
-              <configuration>
-                  <locales>en</locales>
-                  <tempWebappDirectory>${basedir}/target/site/tempdir</tempWebappDirectory>
-              </configuration>
-          </plugin>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <tagBase>https://www.kamradtfamily.net/svn/projects/tags</tagBase>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-site-plugin</artifactId>
+                <configuration>
+                    <locales>en</locales>
+                    <tempWebappDirectory>${basedir}/target/site/tempdir</tempWebappDirectory>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
