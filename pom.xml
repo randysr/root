@@ -81,6 +81,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <tagBase>https://www.kamradtfamily.net/svn/projects/tags</tagBase>
+                    <preparationGoals>clean install</preparationGoals>
                 </configuration>
             </plugin>
             <plugin>
