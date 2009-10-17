@@ -1,10 +1,9 @@
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.kamradtfamily.root</groupId>
     <artifactId>root</artifactId>
     <packaging>pom</packaging>
-    <version>1.12-SNAPSHOT</version>
+    <version>1.12</version>
     <properties>
         <devServer>https://www.kamradtfamily.net</devServer>
         <docServer>https://www.kamradtfamily.net/projects</docServer>
@@ -60,9 +59,9 @@
     </organization>
 
     <scm>
-        <connection>scm:svn:https://www.kamradtfamily.net/svn/projects/trunk/root</connection>
-        <developerConnection>scm:svn:https://www.kamradtfamily.net/svn/projects/trunk/root</developerConnection>
-        <url>https://www.kamradtfamily.net/svn/projects/trunk/root</url>
+        <connection>scm:svn:https://www.kamradtfamily.net/svn/projects/tags/root-1.12</connection>
+        <developerConnection>scm:svn:https://www.kamradtfamily.net/svn/projects/tags/root-1.12</developerConnection>
+        <url>https://www.kamradtfamily.net/svn/projects/tags/root-1.12</url>
     </scm>
     <distributionManagement>
         <repository>
