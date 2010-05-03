@@ -13,8 +13,8 @@
     <description>Root project with basic descriptions for all projects</description>
     <url>${docServer}/root-${version}</url>
     <ciManagement>
-        <system>continuum</system>
-        <url>${devServer}/continuum</url>
+        <system>hudson</system>
+        <url>${devServer}/hudson</url>
         <notifiers>
             <notifier>
                 <type>mail</type>
