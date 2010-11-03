@@ -1,3 +1,4 @@
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.kamradtfamily.root</groupId>
@@ -11,10 +12,10 @@
     </properties>
     <name>Kamradtfamily.net Project Root</name>
     <description>Root project with basic descriptions for all projects</description>
-    <url>${docServer}/root-${version}</url>
+    <url>https://www.kamradtfamily.net/projects/root-${project.version}</url>
     <ciManagement>
         <system>hudson</system>
-        <url>${devServer}/hudson</url>
+        <url>https://www.kamradtfamily.net/hudson</url>
         <notifiers>
             <notifier>
                 <type>mail</type>
@@ -52,7 +53,6 @@
             </roles>
         </developer>
     </developers>
-
     <organization>
         <name>Kamradt Family</name>
         <url>https://www.kamradtfamily.net/</url>
@@ -65,16 +65,31 @@
     </scm>
     <distributionManagement>
         <repository>
-            <id>kamradtfamily.net.internal</id>
-            <name>Internal Release Repository</name>
-            <url>dav:https://www.kamradtfamily.net/archiva/repository/internal/</url>
+            <id>releases</id>
+            <url>https://www.kamradtfamily.net/nexus/content/repositories/releases</url>
         </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <url>https://www.kamradtfamily.net/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
         <site>
             <id>festus.projects</id>
-            <url>dav:${docServer}/root-${version}</url>
+            <url>dav:https://www.kamradtfamily.net/projects/root-${project.version}</url>
         </site>
     </distributionManagement>
     <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ssh</artifactId>
+                <version>1.0-beta-6</version>
+            </extension>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-webdav-jackrabbit</artifactId>
+                <version>1.0-beta-6</version>
+            </extension>
+        </extensions>
         <plugins>
             <plugin>
                 <artifactId>maven-release-plugin</artifactId>
@@ -85,19 +100,25 @@
                 </configuration>
             </plugin>
             <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.5</source>
-                    <target>1.5</target>
-                </configuration>
-            </plugin>
-            <plugin>
                 <artifactId>maven-site-plugin</artifactId>
+                <version>2.0-beta-7</version>
                 <configuration>
                     <locales>en</locales>
                     <tempWebappDirectory>${basedir}/target/site/tempdir</tempWebappDirectory>
                 </configuration>
             </plugin>
         </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>2.0.2</version>
+                    <configuration>
+                        <source>1.6</source>
+                        <target>1.6</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
 </project>
