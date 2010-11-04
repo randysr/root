@@ -107,6 +107,13 @@
                     <tempWebappDirectory>${basedir}/target/site/tempdir</tempWebappDirectory>
                 </configuration>
             </plugin>
+            <plugin>
+                <artifactId>maven-scm-plugin</artifactId>
+                <configuration>
+                    <username>${scm.username}</username>
+                    <password>${scm.password}</password>
+                </configuration>
+            </plugin>
         </plugins>
         <pluginManagement>
             <plugins>
