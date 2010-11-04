@@ -3,6 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.kamradtfamily.root</groupId>
     <artifactId>root</artifactId>
+    <name>The SUPER POM!!!!</name>
     <packaging>pom</packaging>
     <version>1.14-SNAPSHOT</version>
     <properties>
