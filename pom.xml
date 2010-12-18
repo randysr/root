@@ -15,7 +15,7 @@
     <url>https://www.kamradtfamily.net/projects/root-${project.version}</url>
     <ciManagement>
         <system>hudson</system>
-        <url>https://www.kamradtfamily.net/hudson</url>
+        <url>http://cloudy:8082/hudson</url>
         <notifiers>
             <notifier>
                 <type>mail</type>
@@ -39,7 +39,7 @@
     <mailingLists>
     </mailingLists>
     <prerequisites>
-        <maven>2.2.1</maven>
+        <maven>3.0.1</maven>
     </prerequisites>
     <inceptionYear>2008</inceptionYear>
     <developers>
@@ -66,13 +66,13 @@
     <distributionManagement>
         <repository>
             <id>releases</id>
-            <url>https://www.kamradtfamily.net/nexus/content/repositories/releases</url>
+            <url>http://cloudy:8081/nexus/content/repositories/releases</url>
         </repository>
         <snapshotRepository>
             <id>snapshots</id>
-            <url>https://www.kamradtfamily.net/nexus/content/repositories/snapshots</url>
+            <url>http://cloudy:8081/nexus/content/repositories/snapshots</url>
         </snapshotRepository>
-        <site>
+        <site>            
             <id>festus.projects</id>
             <url>dav:https://www.kamradtfamily.net/projects/root-${project.version}</url>
         </site>
@@ -93,7 +93,7 @@
         <plugins>
             <plugin>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.0-beta-9</version>
+                <version>2.1</version>
                 <configuration>
                     <tagBase>https://www.kamradtfamily.net/svn/projects/tags</tagBase>
                     <preparationGoals>clean install</preparationGoals>
@@ -101,7 +101,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-site-plugin</artifactId>
-                <version>2.0-beta-7</version>
+                <version>3.0-beta-3</version>
                 <configuration>
                     <locales>en</locales>
                     <tempWebappDirectory>${basedir}/target/site/tempdir</tempWebappDirectory>
@@ -120,7 +120,7 @@
             <plugins>
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>2.0.2</version>
+                    <version>2.3.2</version>
                     <configuration>
                         <source>1.6</source>
                         <target>1.6</target>
