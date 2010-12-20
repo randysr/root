@@ -6,11 +6,12 @@
     <packaging>pom</packaging>
     <version>1.15-SNAPSHOT</version>
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <devServer>https://www.kamradtfamily.net</devServer>
         <docServer>https://www.kamradtfamily.net/projects</docServer>
         <svnServer>https://www.kamradtfamily.net/svn</svnServer>
     </properties>
-    <name>Kamradtfamily.net Project Root</name>
+    <name>Kamradtfamily.net Project Root ${project.version}</name>
     <description>Root project with basic descriptions for all projects</description>
     <url>https://www.kamradtfamily.net/projects/root-${project.version}</url>
     <ciManagement>
