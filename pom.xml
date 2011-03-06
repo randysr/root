@@ -4,7 +4,7 @@
     <groupId>net.kamradtfamily.root</groupId>
     <artifactId>root</artifactId>
     <packaging>pom</packaging>
-    <version>1.16</version>
+    <version>1.17-SNAPSHOT</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <devServer>https://www.kamradtfamily.net</devServer>
@@ -60,9 +60,9 @@
     </organization>
 
     <scm>
-        <connection>scm:svn:https://www.kamradtfamily.net/svn/projects/tags/root-1.16</connection>
-        <developerConnection>scm:svn:https://www.kamradtfamily.net/svn/projects/tags/root-1.16</developerConnection>
-        <url>https://www.kamradtfamily.net/svn/projects/tags/root-1.16</url>
+        <connection>scm:svn:https://www.kamradtfamily.net/svn/projects/trunk/root</connection>
+        <developerConnection>scm:svn:https://www.kamradtfamily.net/svn/projects/trunk/root</developerConnection>
+        <url>https://www.kamradtfamily.net/svn/projects/trunk/root</url>
     </scm>
     <distributionManagement>
         <repository>
