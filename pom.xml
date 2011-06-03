@@ -15,8 +15,8 @@
     <description>Root project with basic descriptions for all projects</description>
     <url>https://www.kamradtfamily.net/projects/root-${project.version}</url>
     <ciManagement>
-        <system>hudson</system>
-        <url>http://cloudy:8082/hudson</url>
+        <system>jenkins</system>
+        <url>http://gloomy:8080/jenkins</url>
         <notifiers>
             <notifier>
                 <type>mail</type>
@@ -40,7 +40,7 @@
     <mailingLists>
     </mailingLists>
     <prerequisites>
-        <maven>3.0.1</maven>
+        <maven>3.0.3</maven>
     </prerequisites>
     <inceptionYear>2008</inceptionYear>
     <developers>
