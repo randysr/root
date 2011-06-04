@@ -127,15 +127,6 @@
                     </reportPlugins>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-scm-plugin</artifactId>
-                <version>1.0</version>
-                <configuration>
-                    <username>${scm.username}</username>
-                    <password>${scm.password}</password>
-                </configuration>
-            </plugin>
         </plugins>
         <pluginManagement>
             <plugins>
@@ -148,8 +139,13 @@
                     </configuration>
                 </plugin>
                 <plugin>
-                    <artifactId>maven-project-info-reports-plugin</artifactId>
-                    <version>2.3.1</version>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-scm-plugin</artifactId>
+                    <version>1.0</version>
+                    <configuration>
+                        <username>${scm.username}</username>
+                        <password>${scm.password}</password>
+                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
