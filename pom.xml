@@ -1,3 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright 2011 kamradtfamily.net
+
+    Licensed under kamradtfamilylicense 1.0.  for terms and conditions see:
+    https://www.kamradtfamily.net/projects/licenses/kamradtfamilylicense-1.0.txt
+
+-->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.kamradtfamily.root</groupId>
@@ -101,17 +109,22 @@
             <plugin>
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.0-beta-3</version>
+                <executions>
+                    <execution>
+                        <id>attach-descriptor</id>
+                        <goals>
+                            <goal>attach-descriptor</goal>
+                        </goals>
+                    </execution>
+                </executions>
                 <configuration>
-                    <locales>en</locales>
-                    <tempWebappDirectory>${basedir}/target/site/tempdir</tempWebappDirectory>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-scm-plugin</artifactId>
-                <version>1.4</version>
-                <configuration>
-                    <username>${scm.username}</username>
-                    <password>${scm.password}</password>
+                    <reportPlugins>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-project-info-reports-plugin</artifactId>
+                            <version>2.3.1</version>
+                        </plugin>
+                    </reportPlugins>
                 </configuration>
             </plugin>
         </plugins>
