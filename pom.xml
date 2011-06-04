@@ -35,7 +35,7 @@
     </ciManagement>
     <issueManagement>
         <system>Bugzilla</system>
-        <url>http://gloomy/bugzilla</url>
+        <url>http://gloomy/bugzilla3</url>
     </issueManagement>
     <licenses>
         <license>
