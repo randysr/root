@@ -11,7 +11,7 @@
     <groupId>net.kamradtfamily.root</groupId>
     <artifactId>root</artifactId>
     <packaging>pom</packaging>
-    <version>1.18</version>
+    <version>1.19-SNAPSHOT</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <devServer>https://www.kamradtfamily.net</devServer>
@@ -66,9 +66,9 @@
         <url>https://www.kamradtfamily.net/</url>
     </organization>
     <scm>
-        <connection>scm:svn:https://www.kamradtfamily.net/svn/projects/tags/root-1.18</connection>
-        <developerConnection>scm:svn:https://www.kamradtfamily.net/svn/projects/tags/root-1.18</developerConnection>
-        <url>http://gloomy:8080/svn/repos/projects/list/tags/root-1.18</url>
+        <connection>scm:svn:https://www.kamradtfamily.net/svn/projects/trunk/root</connection>
+        <developerConnection>scm:svn:https://www.kamradtfamily.net/svn/projects/trunk/root</developerConnection>
+        <url>http://gloomy:8080/svn/repos/projects/list/trunk/root</url>
     </scm>
     <distributionManagement>
         <repository>
