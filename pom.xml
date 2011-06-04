@@ -1,4 +1,3 @@
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.kamradtfamily.root</groupId>
@@ -28,7 +27,7 @@
     </ciManagement>
     <issueManagement>
         <system>Bugzilla</system>
-        <url>https://www.kamradtfamily.net/bugzilla</url>
+        <url>http://gloomy/bugzilla</url>
     </issueManagement>
     <licenses>
         <license>
@@ -58,11 +57,10 @@
         <name>Kamradt Family</name>
         <url>https://www.kamradtfamily.net/</url>
     </organization>
-
     <scm>
         <connection>scm:svn:https://www.kamradtfamily.net/svn/projects/trunk/root</connection>
         <developerConnection>scm:svn:https://www.kamradtfamily.net/svn/projects/trunk/root</developerConnection>
-        <url>https://www.kamradtfamily.net/svn/projects/trunk/root</url>
+        <url>http://gloomy:8080/svn/repos/projects/list/trunk/root</url>
     </scm>
     <distributionManagement>
         <repository>
