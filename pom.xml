@@ -15,12 +15,12 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <devServer>https://www.kamradtfamily.net</devServer>
-        <docServer>https://www.kamradtfamily.net/projects</docServer>
+        <docServer>https//www.kamradtfamily.net/projects</docServer>
         <svnServer>https://www.kamradtfamily.net/svn</svnServer>
     </properties>
     <name>Kamradtfamily.net Project Root ${project.version}</name>
     <description>Root project with basic descriptions for all projects</description>
-    <url>https://www.kamradtfamily.net/projects/root-${project.version}</url>
+    <url>http://www.kamradtfamily.net/projects/root-${project.version}</url>
     <ciManagement>
         <system>jenkins</system>
         <url>http://gloomy:8080/jenkins</url>
@@ -40,7 +40,7 @@
     <licenses>
         <license>
             <name>The Kamradt Family Software License, Version 1.0</name>
-            <url>https://www.kamradtfamily.net/projects/licenses/kamradtfamilylicense-1.0.txt</url>
+            <url>http://www.kamradtfamily.net/projects/licenses/kamradtfamilylicense-1.0.txt</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
