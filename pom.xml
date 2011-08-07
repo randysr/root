@@ -67,8 +67,8 @@
         <url>https://www.kamradtfamily.net/</url>
     </organization>
     <scm>
-        <connection>git@github.com:randysr/root.git</connection>
-        <developerConnection>git@github.com:randysr/root.git</developerConnection>
+        <connection>scm:git:git@github.com:randysr/root.git</connection>
+        <developerConnection>scm:git:git@github.com:randysr/root.git</developerConnection>
         <url>git@github.com:randysr/root.git</url>
     </scm>
     <distributionManagement>
